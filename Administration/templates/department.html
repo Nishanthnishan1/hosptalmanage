@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Appoinment
+{% endblock %}
+
+
+{% block contant %}
+<h1 class="text-center"> Our Department</h1>
+<hr>
+{% for i in dept %}
+<div class="mx-auto w-50 bg-success text-center text-white p-3 my-5 border-warning rounded">
+    <h1>{{i.dep_name}}</h1>
+    <p>{{i.dep_desc}}</p>
+</div>
+{% endfor %}
+{% endblock %}
